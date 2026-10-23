@@ -14,6 +14,19 @@
                 border: 10px solid;
                 padding: 16 px;
             }
+            main{
+                 background-color: rgba(184, 135, 11, 0);
+                color: rgb(201, 222, 45);
+                text-align: center;
+                max-width: 800px;
+                margin:0 auto;
+                border: 10px solid black;
+                padding: 16 px;
+
+            }
+            article{
+                display: flex;
+            }
 
             img{
                 height: 80px;
@@ -26,16 +39,6 @@
 
             }
 
-            main{
-                 background-color: rgba(184, 135, 11, 0);
-                color: rgb(201, 222, 45);
-                text-align: center;
-                max-width: 800px;
-                margin:0 auto;
-                border: 10px solid black;
-                padding: 16 px;
-                display: flex;
-            }
 
 
 </style>
@@ -50,6 +53,7 @@
     </header>
 
     <main>
+        <article>
         <img src="imagem-blog.webp" alt="">
         <div>
             <h2>Discover the fascinating world of Nullscape</h2>
@@ -58,51 +62,31 @@
                <button>✧<span>0</span></button>
                <button>◉<span>0</span></button>
         </div>
-        </main>
+        </article>
+
+        <article>
+<img src="imagem-blog.webp2" alt="">
+        <div>
+            <h2>continue your decadence</h2>
+            <p>see your paths sealed</p>
+            <button>✮<span>0</span></button>
+            <button>☪<span>0</span></button>
+        </div>
+</article>
+    </main>
 </body> 
  <script>
-                const botao = document.queryselector("button");
-                botao.addEvenLesteber("click",botaoClicado,);
-
+                const botao = document.queryselector("main button");
+                botoes.array.forEach(function (botao){
+                botao.addEvenLesteber("click",botaoClicado);
                 function botaoClicado(){
-                    console.log("fui clicado");
-                    let texto = botao.queryselector("span");
-                    texto.textContent ++;
-                })
+                console.log("fui clicado");
+                let texto = botao.queryselector("span");
+                texto.textContent ++;
+                }});
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
 
                 </script>
 </html>
